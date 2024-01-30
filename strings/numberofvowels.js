@@ -1,22 +1,17 @@
-function capitalizeWords(sentence) {
-    let result = "";
-    let capitalizeNext = true;
-  
-    for (let char of sentence) {
-      if (capitalizeNext && char !== " ") {
-        result += char.toUpperCase();
-        capitalizeNext = false;
-      } else {
-        result += char;
-        capitalizeNext = char === " ";
-      }
+function countVowels(sentence) {
+  const vowels = "aeiouAEUIO";
+  let vowelCount = 0;
+
+  for (let char of sentence) {
+    if (vowels.includes(char)) {
+      vowelCount++;
     }
-  
-    return result;
   }
-  
-  // Example usage:
-  const sentence = "you are young";
-  const result = capitalizeWords(sentence);
-  console.log(result); // Output: "You Are Young"
-  
+
+  return vowelCount;
+}
+
+// Example usage:
+const sentence = "This is a sAmple sentence.";
+const result = countVowels(sentence);
+console.log(result); // Output: 8
