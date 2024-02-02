@@ -15,7 +15,7 @@ function shiftLeft(arr) {
   }
   
   // Example usage:
-  const originalArray = [1, 2, 3, 4, 5];
+  const originalArray = [1, 2, 3, 4, 5];//output [2,3,4,5,1]
   const shiftedArray = shiftLeft(originalArray);
   console.log(shiftedArray);
   

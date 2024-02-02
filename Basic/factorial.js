@@ -8,6 +8,6 @@ function calculateFactorial(number) {
   }
   
   // Example usage:
-  console.log(calculateFactorial(5)); // Output: 120
+  console.log(calculateFactorial(12)); 
   console.log(calculateFactorial(0)); // Output: 1
   
